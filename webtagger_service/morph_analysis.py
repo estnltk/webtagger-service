@@ -4,7 +4,7 @@ from estnltk.taggers import VabamorfTagger
 morph_analysis_tagger = VabamorfTagger()
 
 
-def tag_morph_analysis(data):
+def tag(data):
     text = json_to_text(data['text'])
     layers = json_to_layers(text, data['layers'])
 

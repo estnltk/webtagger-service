@@ -1,7 +1,7 @@
 from flask import Flask, request
 
-from .morph_analysis import tag_morph_analysis
 from .tag_layer import tag_layer
+from . import morph_analysis
 from . import bert_embeddings
 
 
@@ -15,7 +15,7 @@ def tag_layer_endpoint(layer_names):
 
 @app.route('/tag/morph_analysis', methods=['POST'])
 def tag_morph_analysis_endpoint():
-    return tag_morph_analysis(request.json)
+    return morph_analysis.tag(request.json)
 
 
 @app.route('/tag/bert_embeddings', methods=['POST'])
