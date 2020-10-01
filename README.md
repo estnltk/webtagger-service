@@ -23,11 +23,11 @@ http://127.0.0.1:5000/1.6.7beta/tag/morph_softmax_emb_tag_sum
 These endpoints are used by the EstNLTK web-taggers. About web-taggers see
 https://github.com/estnltk/estnltk/tree/devel_1.6/estnltk/taggers/web_taggers and https://github.com/estnltk/estnltk/blob/devel_1.6/tutorials/taggers/web_taggers.ipynb.
 
-## Create a new endpoint
+## New endpoint
 
 To create a new endpoint
 1. create a new service (see [morph_analysis](webtagger_service/morph_analysis.py) as an example),
-2. create a new endpoint (see [endpoints](webtagger_service/endpoints.py) for examples),
+2. add a new [endpoint](webtagger_service/endpoints.py),
 3. write [tests](tests).
 
 Also, you probably want to create a new web-tagger that uses the endpoint.
