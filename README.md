@@ -30,5 +30,4 @@ To create a new endpoint
 2. add a new [endpoint](webtagger_service/endpoints.py),
 3. write [tests](tests).
 
-Also, you probably want to create a new web-tagger that uses the endpoint.
-See https://github.com/estnltk/estnltk/tree/devel_1.6/estnltk/taggers/web_taggers.
+Also, you probably want to create a new [web-tagger](https://github.com/estnltk/estnltk/tree/devel_1.6/estnltk/taggers/web_taggers) that uses the endpoint.
