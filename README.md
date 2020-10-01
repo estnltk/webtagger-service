@@ -1,7 +1,7 @@
 # Webservice for EstNLTK web-taggers
 
 ## Install
-1. Set up a Python environment with [EstNLTK 1.6](). 
+1. Set up a Python environment with [EstNLTK 1.6](https://github.com/estnltk/estnltk/tree/devel_1.6) (`version>=1.6.7b`). 
 2. Set up [Neural morphological taggers](https://github.com/estnltk/estnltk/blob/devel_1.6/tutorials/taggers/neural_morph_tagger_new.ipynb) and [BertTagger](https://github.com/estnltk/estnltk/blob/devel_1.6/tutorials/taggers/embeddings_tagger.ipynb).
 3. Clone this repository
 4. Install
@@ -20,7 +20,7 @@ http://127.0.0.1:5000/1.6.7beta/tag/bert_embeddings
 
 http://127.0.0.1:5000/1.6.7beta/tag/morph_softmax_emb_tag_sum
 
-These endpoints are used by the EstNLTK web-taggers, see
+These endpoints are used by the EstNLTK web-taggers. About web-taggers see
 https://github.com/estnltk/estnltk/tree/devel_1.6/estnltk/taggers/web_taggers and https://github.com/estnltk/estnltk/blob/devel_1.6/tutorials/taggers/web_taggers.ipynb.
 
 ## Create a new endpoint
