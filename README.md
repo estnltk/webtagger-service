@@ -9,10 +9,13 @@
     pip install webtagger-service
     ```
 
-## Run
+## Run server
     cd webtagger-service
     python server.py
-This will run the server at http://127.0.0.1:5000.    
+This will run the server at http://127.0.0.1:5000.
+
+## Run tests
+    pytest
 
 ## Existing endpoints
 
