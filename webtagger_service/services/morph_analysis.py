@@ -1,8 +1,8 @@
 from estnltk.taggers import VabamorfTagger
-from webtagger_service.services import common
+from . import apply_tagger
 
 tagger = VabamorfTagger()
 
 
 def tag(data):
-    return common.apply_tagger(data, tagger)
+    return apply_tagger.apply_tagger(data, tagger)
