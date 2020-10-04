@@ -1,9 +1,7 @@
 from flask import Flask, request
 
-from .tag_layer import tag_layer
-from . import morph_analysis
-from . import bert_embeddings
-
+from webtagger_service.services.tag_layer import tag_layer
+from .services import bert_embeddings, morph_analysis, softmax_emb_tag_sum
 
 app = Flask(__name__, static_folder=None, template_folder=None)
 
@@ -25,5 +23,4 @@ def tag_bert_embeddings_endpoint():
 
 @app.route('/tag/morph_softmax_emb_tag_sum', methods=['POST'])
 def tag_morph_softmax_emb_tag_sum_endpoint():
-    from . import softmax_emb_tag_sum
     return softmax_emb_tag_sum.tag(request.json)

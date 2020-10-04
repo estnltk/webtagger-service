@@ -1,6 +1,5 @@
 from estnltk.taggers.neural_morph.new_neural_morph.neural_morph_tagger import SoftmaxEmbTagSumTagger
-from . import common
-
+from webtagger_service.services import common
 
 tagger = SoftmaxEmbTagSumTagger()
 

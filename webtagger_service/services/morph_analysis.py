@@ -1,6 +1,5 @@
 from estnltk.taggers import VabamorfTagger
-from . import common
-
+from webtagger_service.services import common
 
 tagger = VabamorfTagger()
 

@@ -29,7 +29,7 @@ https://github.com/estnltk/estnltk/tree/devel_1.6/estnltk/taggers/web_taggers an
 ## New endpoint
 
 To create a new endpoint
-1. create a new service (see [morph_analysis](webtagger_service/morph_analysis.py) as an example),
+1. create a new service (see [morph_analysis](webtagger_service/services/morph_analysis.py) as an example),
 2. add a new [endpoint](webtagger_service/endpoints.py),
 3. write [tests](tests).
 
