@@ -7,7 +7,7 @@ def apply_tagger(data, tagger):
     text.meta = data['meta']
     layers = json_to_layers(text, data['layers'])
 
-    for layer in Text.layers_to_list(layers):
+    for layer in Text.topological_sort(layers):
         text.add_layer(layer)
 
     layer = tagger.make_layer(text, layers)
