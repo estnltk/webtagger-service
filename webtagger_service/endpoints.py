@@ -6,6 +6,16 @@ from .services import bert_embeddings, morph_analysis, softmax_emb_tag_sum
 estntk_v16_service = Flask(__name__, static_folder=None, template_folder=None)
 
 
+@estntk_v16_service.route('/about', methods=['GET'])
+def about_endpoint():
+    return 'EstNLTK 1.6.7beta webservice'
+
+
+@estntk_v16_service.route('/status', methods=['GET'])
+def status_endpoint():
+    return 'OK'
+
+
 @estntk_v16_service.route('/tag_layer/<layer_names>', methods=['POST'])
 def tag_layer_endpoint(layer_names):
     return tag_layer(layer_names, request.json)
